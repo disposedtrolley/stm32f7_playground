@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.13.1)
+
+set(BOARD nucleo_f767zi)
+
+find_package(Zephyr)
+project(stm32f7_playground)
+
+target_sources(app PRIVATE src/main.cpp)
