@@ -6,7 +6,7 @@
 static const struct adc_channel_cfg adc_cfg = {
     .gain = ADC_GAIN_1,
     .reference = ADC_REF_INTERNAL,
-    .channel_id = 0
+    .channel_id = 9
 };
 
 static uint16_t m_sample_buffer[6];
@@ -27,7 +27,7 @@ void main() {
   }
 
   const struct adc_sequence sequence = {
-		.channels    = BIT(0),
+		.channels    = BIT(9),
 		.buffer      = m_sample_buffer,
 		.buffer_size = sizeof(m_sample_buffer),
 		.resolution  = 12,
