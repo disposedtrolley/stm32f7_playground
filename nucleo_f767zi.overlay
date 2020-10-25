@@ -1,5 +1,5 @@
 /* Enable ADC_1 */
 &adc1 {
-	pinctrl-0 = <&adc1_in0_pa0 &adc1_in9_pb1>;
+	pinctrl-0 = <&adc1_in9_pb1 &adc1_in12_pc2>;
 	status = "okay";
 };
